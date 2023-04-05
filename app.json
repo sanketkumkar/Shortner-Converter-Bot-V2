@@ -1,0 +1,27 @@
+{
+  "name": "Adanylinks",
+  "description": "adanylinks is url shoretner",
+  "repository": "https://github.com/sanketkumkar/Shortner-Converter-Bot-V2
+.git",
+  "scripts": {
+    "start": "python bot.py"
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "11"
+      }
+    }
+  ],
+  "env": {
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Telegram bot API token",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "PostgreSQL database URL",
+      "required": true
+    }
+  }
+}
