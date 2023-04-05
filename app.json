@@ -16,7 +16,7 @@
   ],
   "env": {
     "TELEGRAM_BOT_TOKEN": {
-      "description": "Telegram bot API token",
+      "description": "5868634376:AAGpCDLTK09d8mIy_vhW3BRamLAIHwZYJEQ",
       "required": true
     },
     "DATABASE_URL": {
