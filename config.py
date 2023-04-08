@@ -12,8 +12,8 @@ API_HASH = os.environ.get("API_HASH", "32b77438d290b88d51c051f029c36fb5")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5868634376:AAGpCDLTK09d8mIy_vhW3BRamLAIHwZYJEQ")
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split("1897413160")] if os.environ.get("ADMINS") else []
 ADMIN = ADMINS
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "adanylinks")
-DATABASE_URL = os.getenv("DATABASE_URL", "mongorestore --uri mongodb+srv://sanketkumkar:@12345@@@adanylinks.ojdqfff.mongodb.net " --apiVersion 1 --username sanketkumkar")"
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "mongosh")
+DATABASE_URL = os.getenv("DATABASE_URL", "mongodb://mongo:fDfoARxijxXavJsb3qgH@containers-us-west-13.railway.app:7283")"
 OWNER_ID =  int(os.environ.get("OWNER_ID", "1897413160")) 
 ADMINS.append(1897413160) if OWNER_ID not in ADMINS else []
 ADMINS.append(1897413160)
