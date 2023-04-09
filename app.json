@@ -1,0 +1,44 @@
+{
+  "name": "AdanyLinks",
+  "description": "A URL shortener application built with Node.js and MongoDB.",
+  "repository": "https://github.com/sanketkumkar/Shortner-Converter-Bot-V2",
+  "keywords": ["url-shortener", "node.js", "mongodb"],
+  "image": "https://adanylinks.in/logo.png",
+  "env": {
+    "NODE_ENV": {
+      "description": "Node.js environment",
+      "value": "production"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection URI",
+      "value": "<your-mongodb-uri>"
+    },
+    "BASE_URL": {
+      "description": "Base URL for the application",
+      "value": "https://adanylinks.in"
+    },
+    "PORT": {
+      "description": "Port for the application to listen on",
+      "value": "3000"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "13"
+      }
+    },
+    {
+      "plan": "heroku-redis",
+      "options": {
+        "version": "6"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
